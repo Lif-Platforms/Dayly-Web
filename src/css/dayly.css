@@ -1,0 +1,91 @@
+::before, ::after {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    overflow-x: hidden;
+    background-color: rgb(241, 238, 238);
+    padding: 0;
+    margin: 0;
+}
+html {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.btn { 
+    display: inline-block;
+    padding: 5px;
+}
+nav {
+    width:100%;
+    background-color: white;
+    padding: 0.7rem 0;
+    top:0;
+    z-index: 10;
+    position: fixed;
+}
+
+nav .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .searchbox {
+    background-color: rgb(230, 227, 227);
+    border-radius: 1.5em;
+    padding: 10px;
+}
+nav .searchbox input[type='search'] {
+    background: transparent;
+    width: 30vw;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    border: none;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+.create button{
+    padding: 12px;
+    background-color: rgb(81, 81, 255);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    border-radius: 2em;
+    padding-right: 25px;
+    padding-left: 25px;
+    border-color: transparent;
+    border-width: 0;
+}
+nav .profile img {
+    width: 50px;
+    border-radius: 50%;
+}
+
+nav .profile img:hover {
+    width: 50px;
+    border-radius: 50%;
+    border-width: 4px;
+    border-color: rgb(190, 190, 190);
+    transition: ease-in-out;
+}
