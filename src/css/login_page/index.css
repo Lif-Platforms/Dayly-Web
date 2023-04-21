@@ -1,0 +1,62 @@
+.main {
+    background-image: url("../../Assets/Images/Login/login-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.loginForm {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: block;
+    float: left;
+    margin-left: 50px;
+    border-radius: 1em;
+    box-shadow: 3px 3px 10px gray;
+    padding: 20px 100px 40px 100px;
+    margin-top: 10%;
+    background-color: white;
+}
+
+.loginForm input {
+    margin-top: 20px;
+    width: 100%;
+    border: solid rgb(0, 119, 255);
+    border-radius: 0.5em;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.loginForm button {
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    padding: 10px 40px 10px 40px;
+    border-radius: 0.5em;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.loginForm button:hover {
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(93, 169, 255);
+    color: white;
+    padding: 10px 40px 10px 40px;
+    border-radius: 0.5em;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.loginForm button:active {
+    margin-top: 20px;
+    border: none;
+    background-color: rgb(0, 119, 255);
+    color: white;
+    padding: 10px 40px 10px 40px;
+    border-radius: 0.5em;
+    font-size: 30px;
+    transform: scale(0.88);
+    transition: 0.3s;
+}
