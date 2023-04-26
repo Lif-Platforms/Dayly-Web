@@ -7,22 +7,25 @@
 
 .loginForm {
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    display: block;
-    float: left;
-    margin-left: 50px;
+    margin: 50px;
     border-radius: 1em;
     box-shadow: 3px 3px 10px gray;
     padding: 20px 100px 40px 100px;
-    margin-top: 10%;
+    display:inline-block;
+    vertical-align: middle;
     background-color: white;
 }
 
+.loginForm label {
+    text-align: left;
+    font-weight: bold;
+}
+
 .loginForm input {
-    margin-top: 20px;
+    margin-bottom: 20px;
     width: 100%;
     border: solid rgb(0, 119, 255);
-    border-radius: 0.5em;
+    border-radius: 0.3em;
     font-size: 30px;
     padding: 5px;
 }

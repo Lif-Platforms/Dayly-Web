@@ -1,19 +1,24 @@
 // Import Stuff
 import React from 'react';
 import "../css/login_page/index.css";
+import { login } from "../Scripts/login_page/login"
 
 // Component for login form
 function LoginForm() {
     return(
         <div className='loginForm'>
-            <h1>Login With Lif</h1>
-            <form>
-                <input placeholder='Username' id='userInput'></input>
-                <br />
-                <input placeholder='Password' id='passInput'></input>
-                <br />
-                <button type='button'>Login</button>
-            </form>
+            <div className='formContainer'>
+                <h1>Login With Lif</h1>
+                <form>
+                    <label for='userInput'>Username</label>
+                    <input placeholder='Enter your Username' id='userInput'></input>
+                    <br />
+                    <label for='userInput'>Password</label>
+                    <input placeholder='Enter your Password' id='passInput' type='password'></input>
+                    <br />
+                    <button type='button' onClick={login}>Login</button>
+                </form>
+            </div>
         </div>
     );
 }
