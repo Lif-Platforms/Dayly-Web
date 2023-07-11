@@ -1,5 +1,5 @@
 // Import Stuff
-import React from 'react';
+import React, { useEffect } from 'react';
 import "../css/login_page/index.css";
 import { login } from "../Scripts/login_page/login"
 
@@ -25,6 +25,11 @@ function LoginForm() {
 
 // Main component for login page
 function Login() {
+    // Changes the page title
+    useEffect(() => {
+        document.title = 'Dayly | Login';
+      }, []);
+
     return(
         <div className='main'>
             <LoginForm />

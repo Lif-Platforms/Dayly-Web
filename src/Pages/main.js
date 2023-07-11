@@ -1,9 +1,10 @@
 import React from 'react';
+import TopNav from '../global components/topnav';
 
  function Main() {
     return(
         <div>
-            <h1>Hello World</h1>
+            <TopNav />
         </div>
     );
  }
