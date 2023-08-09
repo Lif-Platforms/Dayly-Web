@@ -10,6 +10,8 @@
     box-shadow: 10px 10px 20px rgb(143, 140, 140);
     display: grid;
     grid-template-columns: auto auto;
+    animation-name: post-animation;
+    animation-duration: 0.5s;
 }
 
 .post-form form {
@@ -55,6 +57,9 @@
     border: unset;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    padding: 5px;
+    max-width: 500px;
+    max-height: 500px;
 }  
 
 .image-upload button:hover {
@@ -64,6 +69,11 @@
 .image-upload button:active { 
     opacity: 0.5;
     transform: scale(0.95);
+}
+
+.image-upload img {
+    border-radius: 1em;
+    width: 100%;
 }
 
 .post-button {
@@ -80,4 +90,25 @@
     padding-right: 40px;
     margin-top: 10px;
     cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.post-button:hover {
+    opacity: 0.5;
+}
+
+.post-button:active {
+    opacity: 0.5;
+    transform: scale(0.90);
+}
+
+@keyframes post-animation {
+    0% {
+        opacity: 0;
+        transform: scale(0.90);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
