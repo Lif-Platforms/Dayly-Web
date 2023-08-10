@@ -3,22 +3,36 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    display: flex;
+    align-items: center; /* Vertically center content */
+}
+
+.loginContainer {
+    margin-left: 50px; /* Adjust the left margin to push the form to the left */
 }
 
 .loginForm {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 50px;
     border-radius: 1em;
     box-shadow: 3px 3px 10px gray;
     padding: 20px 100px 40px 100px;
-    display:inline-block;
-    vertical-align: middle;
     background-color: white;
 }
 
 .loginForm label {
-    text-align: left;
+    text-align: left; /* Align the labels to the left */
     font-weight: bold;
+    display: block; /* Ensure each label occupies a full line */
+    margin-bottom: 5px; /* Add some spacing between labels and inputs */
+}
+
+.loginForm img {
+    width: 200px;
+}
+
+.loginForm span {
+    margin-top: 20px;
+    display: block;
 }
 
 .loginForm input {
